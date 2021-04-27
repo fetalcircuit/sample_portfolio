@@ -1,41 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8" />
 
-<title>A sample portfolio webpage</title>
+  <title>A sample portfolio webpage</title>
 
-<!--<style>
+  <!--<style>
 p { color: purple;}
 h1 { color: blue;}
 </style>-->
 
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Acme|Open+Sans|Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!--This is a link to some Google Fonts, which can be found at: https://fonts.google.com/-->
+  <link href="https://fonts.googleapis.com/css?family=Acme|Open+Sans|Teko&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <img id="header" src="images/header.png">
 
-  <img id="title" src="images/name_text.png">
+<!--  <img id="bkgnd" src="images/header.png">-->
 
-<h2><u>Tiffany Funk</u> (PhD) is an artist, critical theorist, and researcher specializing in emerging media, computer art, video games, and performance art practices. She is the Editor-in-Chief of the Video Game Art Reader and Co-founding Lecturer and Academic Advisor of IDEAS (Interdisciplinary Education in the Arts)—an intermedia, theory and practice-based Bachelor of Arts degree at the University of Illinois at Chicago.</h2>
+<!--The "id" below refers to an "id tag" that styles this image in a specific way -
+you will find the styling in the .css file.-->
 
-<h1>IDEAS 120 CLASS PROJECTS</h1>
+  <div id="bio">
+    <h1><u>Tiffany Funk</u> (PhD) is an artist, critical theorist, and researcher
+      specializing in emerging media, computer art, video games, and performance art practices.</h1>
+  </div>
 
-<img class="project_l" src="images/glass.png">
-<p class="right"><u><b>PROJECT #1</b></u></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt erat ac sapien posuere aliquam. Suspendisse tincidunt in lacus vel auctor. Phasellus gravida commodo magna, fringilla sagittis sem elementum et. Quisque non consectetur ex. Nunc volutpat, neque vel rhoncus mattis, erat leo feugiat libero, eu feugiat metus massa nec nulla. Suspendisse scelerisque, lectus in malesuada eleifend, ligula ipsum luctus justo, et sollicitudin nisl arcu ut orci. Nullam quis magna at odio vulputate vulputate. Ut ante mi, elementum ut condimentum at, placerat venenatis orci. Fusce posuere, lacus vel dignissim congue, leo ipsum fringilla ligula, id rhoncus dolor magna sit amet neque. In id gravida est. Vivamus tempus tempus risus, in mattis odio pretium at. In sit amet est vestibulum, ornare sem non, interdum leo.</p>
+<!--the "a href" tag creates a link. In this case, I gave each project its own link so
+that it will take you to that particular project on this page. See below where the "id"
+of each project div is labeled "project1" or "project2" (etc.)-->
+  <div>
+    <ul>
+      <h2>IDEAS 120 CLASS PROJECTS</h2>
+      <li>PROJECT 1: <a href="#project1">Github Poetry</a></li>
+      <li>PROJECT 2: <a href="#project2">Zoom Background</a></li>
+      <li>PROJECT 3: <a href="#project3">Twine Game</a></li>
+      <li>PROJECT 4: <a href="#project4">Something Else</a></li>
+    </ul>
+  </div>
 
-<img class="project_r" src="images/lemons.png">
-<ul class="left"><b><u>PROJECT #2</u></b></br>Aenean blandit, turpis ut porttitor ultricies, lacus lectus pretium dui, ac ornare orci erat sed elit. Quisque quis viverra justo. Morbi non hendrerit mauris. Aenean maximus et tortor vel pharetra. Nullam id ultrices augue. Nullam vel ultrices sem, quis efficitur ex. Nam congue lectus eu quam tristique fringilla.
-  <li>Cats</li>
-  <li>Dogs</li>
-  <li>Ardvarks</li>
-</ul>
+<!--the "class" tag works a lot like the "id" tag, except it's helpful to use for a whole class
+of divs - in this case, the "img_left" class will style all the images I want to align to the left
+of the page.-->
+  <div class="img_left" id="project1"><img src="images/steve.gif"></div>
+  <div class="text_right">
+    <p><h3>PROJECT #1</h3></br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt erat ac sapien posuere aliquam. Suspendisse tincidunt in lacus vel auctor. Phasellus gravida commodo magna, fringilla sagittis
+      sem elementum et. Quisque non consectetur ex. Nunc volutpat, neque vel rhoncus mattis, erat leo feugiat libero, eu feugiat metus massa nec nulla. Suspendisse scelerisque, lectus in malesuada eleifend, ligula ipsum luctus justo, et sollicitudin
+      nisl arcu ut orci. Nullam quis magna at odio vulputate vulputate. Ut ante mi, elementum ut condimentum at, placerat venenatis orci. Fusce posuere, lacus vel dignissim congue, leo ipsum fringilla ligula, id rhoncus dolor magna sit amet neque. In
+      id gravida est. Vivamus tempus tempus risus, in mattis odio pretium at. In sit amet est vestibulum, ornare sem non, interdum leo.
+    </p>
+  </div>
 
-<img class="project_l" src="images/table.png">
-<p class="left"><u><b>PROJECT #3</b></u></br>Fusce tincidunt erat ac sapien posuere aliquam. Suspendisse tincidunt in lacus vel auctor. Phasellus gravida commodo magna, fringilla sagittis sem elementum et. Quisque non consectetur ex. Nunc volutpat, neque vel rhoncus mattis, erat leo feugiat libero, eu feugiat metus massa nec nulla. Suspendisse scelerisque, lectus in malesuada eleifend, ligula ipsum luctus justo, et sollicitudin nisl arcu ut orci. Nam aliquet arcu sed massa varius, vel luctus felis luctus. Nullam quis magna at odio vulputate vulputate. Ut ante mi, elementum ut condimentum at, placerat venenatis orci. Fusce posuere, lacus vel dignissim congue, leo ipsum fringilla ligula, id rhoncus dolor magna sit amet neque. In id gravida est. Vivamus tempus tempus risus, in mattis odio pretium at. In sit amet est vestibulum, ornare sem non, interdum leo.</p>
+  <div class="img_right" id="project2"><img src="images/catwtf.gif"></div>
+  <div class="text_left">
+    <p><h3>PROJECT #2</h3></br>Aenean blandit, turpis ut porttitor ultricies, lacus lectus pretium dui, ac ornare orci erat sed elit. Quisque quis viverra justo. Morbi non hendrerit mauris. Aenean maximus et tortor vel
+      pharetra.
+      Nullam id ultrices augue. Nullam vel ultrices sem, quis efficitur ex. Nam congue lectus eu quam tristique fringilla.
+    </p>
+  </div>
 
+  <div class="img_left" id="project3"><img src="images/starwipe.gif"></div>
+  <div class="text_right">
+    <p><h3>PROJECT #3</h3></br>Fusce tincidunt erat ac sapien posuere aliquam. Suspendisse tincidunt in lacus vel auctor. Phasellus gravida commodo magna, fringilla sagittis sem elementum et. Quisque non consectetur ex. Nunc
+      volutpat, neque vel rhoncus mattis, erat leo feugiat libero, eu feugiat metus massa nec nulla. Suspendisse scelerisque, lectus in malesuada eleifend, ligula ipsum luctus justo, et sollicitudin nisl arcu ut orci. Nam aliquet arcu sed massa
+      varius, vel luctus felis luctus. Nullam quis magna at odio vulputate vulputate. Ut ante mi, elementum ut condimentum at, placerat venenatis orci. Fusce posuere, lacus vel dignissim congue, leo ipsum fringilla ligula, id rhoncus dolor magna sit
+      amet neque. In id gravida est. Vivamus tempus tempus risus, in mattis odio pretium at. In sit amet est vestibulum, ornare sem non, interdum leo.</p>
+  </div>
+
+  <div class="img_right" id="project4"><img src="images/moarsteve.gif"></div>
+  <div class="text_left">
+    <p><h3>PROJECT #4</h3></br>Aenean blandit, turpis ut porttitor ultricies, lacus lectus pretium dui, ac ornare orci erat sed elit. Quisque quis viverra justo. Morbi non hendrerit mauris. Aenean maximus et tortor vel
+      pharetra.
+      Nullam id ultrices augue. Nullam vel ultrices sem, quis efficitur ex. Nam congue lectus eu quam tristique fringilla.
+    </p>
+  </div>
 
 </body>
 
